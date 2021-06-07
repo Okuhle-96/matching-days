@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <title>Matching Days</title>
+</head>
+<header>
+  <script type="text/x-template" class="userTemplate">
+    {{#each days}}
+        <li class="{{color}}">
+            {{day}}
+        </li>
+    {{/each}}
+</script>
+</header>
+<body>
+   <section class="container">
+            <div class="header">
+              <h1>Matching Days</h1>
+              <span class="gray">hgshjhkjsgs</span>
+            </div>
+        
+            <div class="instructions">
+              <p class="instructions">
+                SELECT TWO DATES, THE DAY FOR DATE ONE SHOULD BE BROWN, THE DAY FOR DATE TWO SHOULD BE BLUE AND IF THE DATES ARE ON THE SAME DAY THE MATCHING DAY SHOULD BE GREEN.
+              </p>
+            </div>
+            
+            <div class="weekdays">
+              <span></span>
+            </div>
+       
+            <div class="dates">
+              <div class="first-date">
+                <label>First Date</label><input type="date" id="firstt"  class="first">
+              </div>
+       
+            <div class="second-date">
+                <label>Second Date</label><input type="date" id="secondd" class="second">
+            </div>
+           </div>   
+</section>
+
+    <script src="./js/factory.js"></script>
+    <script src="./js/dom.js"></script>
+
+</body>
+</html>
