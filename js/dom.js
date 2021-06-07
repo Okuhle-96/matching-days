@@ -31,13 +31,22 @@ document.addEventListener('DOMContentLoaded', function(){
         //   matchingInstance.getFirstDay()
         // alert('dwegyfgtwyetgfvyw')
           weekDaysElement.innerHTML = template ({days : matchingInstance.checkMatchingDays()})
+          // if(firstDate.getDay()){
+          //   document.getElementById("color").classList.remove("darkolivegreen");
+          //   document.getElementById("color").classList.remove("slateblue");
+          //   document.getElementById("color").classList.add("burlywood");
+          // }
       } 
       if (two){
           var secondDate = new Date(two)
           matchingInstance.setSecondDay(secondDate.getDay())
           // matchingInstance.getSecondDay()
           weekDaysElement.innerHTML = template ({days : matchingInstance.checkMatchingDays()})
-          // alert('where is the color??')
+          // if(secondDate.getDay()){
+          //   document.getElementById("color").classList.remove("darkolivegreen");
+          //   document.getElementById("color").classList.remove("burlywood");
+          //   document.getElementById("color").classList.add("slateblue");
+          // }
       }
   }
   colorOneElement.addEventListener('change', matchingDays)
